@@ -38,7 +38,7 @@ export function App() {
                 </select>
             </div>
             <ul className="App">
-                {data.map((item) => (
+                {data.map((item: any) => (
                     <li key={item.id} onClick={() => handleDelete(item.id)}>{item.name}</li>
                 ))}
             </ul>
